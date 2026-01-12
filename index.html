@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/2c313ee4fc.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&
+    family=Montserrat:wght@600;700&
+    family=Open+Sans:wght@400;600&
+    display=swap" rel="stylesheet">
+
+    <style>
+        /* ================= NAV VISIBILITY FIX ================= */
+
+        /* Hide hamburger on big screens */
+        
+
+        /* Show hamburger only on mobile & small tablets */
+        @media only screen and (max-width: 600px) {
+            .menu-container {
+                display: flex;
+            }
+        }
+
+ </style>
+ <script src="https://kit.fontawesome.com/2c313ee4fc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Hamburger + Dropdown Menu -->
+    <div class="menu-container">
+        <div class="menu-icon" id="menuIcon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul id="dropdownMenu" class="dropdown-menu">
+            <li><a href="#header" title="Home"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="#about" title="About"><i class="fa-solid fa-user"></i></a></li>
+            <li><a href="#skills" title="Skills"><i class="fa-solid fa-laptop-code"></i></a></li>
+            <li><a href="#projects" title="Projects"><i class="fa-solid fa-briefcase"></i></a></li>
+            <li><a href="#contact" title="Contact"><i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+    </div>
+
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <div class="header">
+                <div class="header-image">
+                    <img src="images/MyPic.jpg" alt="Surya's Image">
+                </div>
+                <div class="header-right">
+                    <div class="header-text">
+                        <h4>Hi, I'm <span class="name">Suryanarayana Sahoo</span></h4>
+                        <div>And I'm a passionate</div>
+                        <!-- Element to contain animated typing -->
+                        <p><span id="element"></span></p>
+                    </div>
+                    <div class="header-contact">
+                        
+                     <a href="pdf/SURYANARAYANA SAHOO C.V.pdf" class="resume-btn1" target="_blank">  <i class="fa-solid fa-file"></i> Resume</a>
+
+                            
+                        <a class="social-icons1" href="https://www.linkedin.com/in/suryanarayan-sahoo-26b78a265/"
+                            target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a class="social-icons1" href="https://github.com/Suryanarayanasahoo" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/web-developer.png" alt="Developer Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I’m <span style="color: rgb(73, 186, 234); font-size: large; font-style: italic;">Suryanarayana Sahoo</span>, a passionate <span style="color:rgb(73, 170, 234);">Full-Stack Developer | Frontend & Web Developer</span> with hands-on experience in building dynamic, user-friendly web applications. My skills span both frontend and backend technologies. I enjoy creating responsive interfaces, designing scalable solutions, and turning ideas into functional products. I thrive in learning new tools, solving problems, and contributing to projects that make an impact.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certification')">Certification</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('skill')">Skills</p>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                             <li>
+                                <div class="card-row">
+                                    <span class="cap-icon">
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                    </span>
+                                    <div class="card-content">
+                                        <div class="card-header">
+                                            <span class="degree">Master of Computer Applications</span>
+                                            <span class="year">Ongoing</span>
+                                        </div>
+                                        Centurion Univesity of Technologies and Management,Bhubaneswar, Odisha
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card-row">
+                                    <span class="cap-icon">
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                    </span>
+                                    <div class="card-content">
+                                        <div class="card-header">
+                                            <span class="degree">B.Sc. in Computer Science</span>
+                                            <span class="year">2020 - 23</span>
+                                        </div>
+                                        Nayagarh Autonomous College, Nayagarh, Odisha
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card-row">
+                                    <span class="cap-icon">
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                    </span>
+                                    <div class="card-content">
+                                        <div class="card-header">
+                                            <span class="degree">Higher Secondary (+2 Science)</span>
+                                            <span class="year">2018 - 20</span>
+                                        </div>
+                                        Uniitech residential Higher Secondary School, Nayagarh, Odisha
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card-row">
+                                    <span class="cap-icon">
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                    </span>
+                                    <div class="card-content">
+                                        <div class="card-header">
+                                            <span class="degree">Secondary Education (10th)</span>
+                                            <span class="year">2018</span>
+                                        </div>
+                                        Government High School, Daringibadi, Kandhamal, Odisha
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <!-- Certification -->
+                    <div class="tab-contents" id="certification">
+                        <div class="card-row">
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <span class="degree">Java Full-Stack Development</span>
+                                    <span class="year">nov, 2023 - Aug, 2024</span>
+
+                                </div>
+                                JSpiders, Bhubaneswar, Odisha
+                            </div>
+
+
+                            <div class="card-content">
+
+                                <div class="card-header">
+                                    <span style="font-size: medium;" class="degree">SAP Certified Associate - Back-End Developer - ABAP Cloud</span>
+                                    <span class="year">Aug, 2025 - Sep, 2025</span>
+
+                                </div>
+                                Centurion Univesity, Bhubaneswar, Odisha
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <div class="card-row">
+                                    <span class="cap-icon"><i class="fa-solid fa-briefcase"></i></span>
+                                    <div class="card-content">
+                                        <div class="card-header">
+                                            <span class="degree">Fresher</span>
+                                            <span class="year"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Skills -->
+                    <div class="tab-contents" id="skill">
+                        <ul>
+                            <li>
+                                <div class="card-row">
+                                    <span class="cap-icon"><i class="fa-solid fa-tools"></i></span>
+                                    <div class="card-content">
+                                        <div class="card-header">
+                                            <span class="degree">Front-end</span>
+                                        </div>
+                                        HTML, CSS, JavaScript,  Bootstrap , React js
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="card-row">
+                                    <span class="cap-icon"><i class="fa-solid fa-tools"></i></span>
+                                    <div class="card-content">
+                                        <span>Back-end</span>
+                                        <br>Java(Core, EE), Servlet, JSP, Hibernate JPA, Spring, Spring Boot, API, Maven , Node js
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="card-row">
+                                    <span class="cap-icon"><i class="fa-solid fa-tools"></i></span>
+                                    <div class="card-content">
+                                        <span>Database</span>
+                                        <br>Database: MySQL,  MongoDB
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Other skill items similarly -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h1 class="sub-title">Skills & Tools</h1>
+            <div class="skills-list">
+                <!-- Skills will be injected here dynamically -->
+            </div>
+            <button id="seeMoreSkillsBtn" onclick="toggleSkills()" style="display: none;">See More</button>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <!-- Works will be injected here dynamically -->
+            </div>
+            <button id="seeMoreWorksBtn" onclick="toggleWorks()" style="display: none;">See More</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="row">
+                <div class="contact-left">
+                    <p><i class="fa-solid fa-envelope"></i>Suryanarayanbabulsahoo@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 6371693031</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/surya.sahoo.7921975/"><i
+                                class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.instagram.com/mr___surya____official?igsh=OXNwZDRnZ3ZjdDVh"><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/suryanarayan-sahoo-26b78a265/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Suryanarayanasahoo"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <!-- <button href="Suryanarayana Sahoo CV.pdf" class="resume-btn" target="_blank"><i class="fa-solid fa-file"></i>
+                        Resume</button> -->
+                    <a href="pdf/SURYANARAYANA SAHOO C.V.pdf" class="resume-btn" target="_blank">  <i class="fa-solid fa-file"></i> Resume</a>
+
+                </div>
+               
+                <div class="contact-right">
+                <span id="msg"></span>
+                <form name="submit-to-google-sheet" id="contactForm">
+                  <input type="text" name="Name" placeholder="Full Name" id="nameInput" required>
+                  <input type="email" name="Email" placeholder="Email" id="emailInput" required>
+                 <textarea name="message" rows="6" placeholder="Message"  required></textarea>
+                 <button type="submit" class="submitBtn">Submit</button>
+            </form>
+        </div>
+        </div>
+        <script src="contact.js"></script>
+        <div class="copyright">
+            <p class="cr"> Thank you for visiting!</p>
+            <div class="signature">Suryanarayana Sahoo</div>
+
+        </div>
+    </section>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzJc3HXMsalJglfQynFCsglUBCaUOjn05W0E85qgQ24hu4c1sbLu-dAPAMvZXnPjNycfA/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Frontend Developer', 'Full-Stack Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+    <script src="script.js"></script>
+    <script src="skills.js"></script>
+    <script src="projects.js"></script>
+    <script src="contact.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            displaySkills();
+            displayWorks();
+        });
+        window.addEventListener("resize", () => {
+    if (window.innerWidth > 600) {
+        document.getElementById("dropdownMenu")?.classList.remove("show");
+    }
+});
+
+    </script>
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+/* ================= NAME AUTO CAPITALIZE ================= */
+const nameInput = document.getElementById("nameInput");
+
+nameInput.addEventListener("input", () => {
+    let value = nameInput.value.toLowerCase();
+
+    // Capitalize first letter of each word
+    value = value.replace(/\b\w/g, char => char.toUpperCase());
+
+    nameInput.value = value;
+});
+
+
+/* ================= EMAIL FORMAT CONTROL ================= */
+const emailInput = document.getElementById("emailInput");
+
+emailInput.addEventListener("input", () => {
+    // Force lowercase
+    emailInput.value = emailInput.value.toLowerCase();
+
+    // Allow only valid email characters
+    emailInput.value = emailInput.value.replace(/[^a-z0-9@._-]/g, "");
+});
+</script>
+
+ 
+</body>
+
+</html>
